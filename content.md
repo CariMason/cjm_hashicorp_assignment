@@ -2,6 +2,8 @@
 
 ### What is the difference between push, pull, and fetch?
 
+This page describes how to use the push, pull, and fetch Git commands to make changes to a shared repository.  
+
 - `git push` - Publishes changes from a local repository to a remote repository. These changes update the remote repository to resemble your local branch. 
 - `git fetch` - Safely downloads committed files and references from a remote repository into your local repo. It is considered safe because files must be checked out using the git checkout command before changes can be made, and it does not automatically merge them with your local repository.
 - `git pull` - Fetches and merges the remote repository to your local file. This action can overwrite local changes that have yet to be committed.
