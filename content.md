@@ -22,4 +22,4 @@ If your `git push` command fails, you can overwrite your local changes using a `
 - `git stash pop` - Brings your local changes back and removes the stash commit.
 
 
-`git fetch` verifies if there is a tracking branch for a remote repository connected to the current branch. If so, it looks for changes in the remote branch and pulls them into the tracking branch. It does not change your local branch. 
+`git fetch` verifies if there is a tracking branch for a remote repository connected to the current branch. If so, it looks for changes in the remote branch and pulls them into the tracking branch, and does not change your local branch. 
