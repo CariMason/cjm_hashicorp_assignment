@@ -1,6 +1,6 @@
 ## Content
 
-### What is the difference between push, pull, and fetch?
+### Using push, pull, and fetch
 
 This page describes how to use the push, pull, and fetch Git commands to make changes to a shared repository.  
 
