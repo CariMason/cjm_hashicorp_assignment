@@ -14,12 +14,12 @@ If the remote branch has diverged from your local branch, the git push command w
 
 **NOTE**: The `git status` command safely displays differences between the local and remote branches. 
 
-If your `git push` command fails, you can overwrite your local changes using a `git pull` or preserve your local changes using the following workflow example.
+If your `git push` command fails, you can overwrite your local changes using a `git pull` or preserve your local changes using the following workflow example:
 
-`git fetch` - Brings the diverged changes to your local branch without merging them.
-`git stash` - Saves your local changes.
-`git merge origin/master` - Integrates the changes from the remote and local branches. 
-`git stash pop` - Brings your local changes back and removes the stash commit.
+- `git fetch` - Brings the diverged changes to your local branch without merging them.
+- `git stash` - Saves your local changes.
+- `git merge origin/master` - Integrates the changes from the remote and local branches. 
+- `git stash pop` - Brings your local changes back and removes the stash commit.
 
 
 `git fetch` again takes our current branch, and checks to see if there is a tracking branch. If so, it looks for changes in the remote branch, and pulls them into the tracking branch. It does not change your local branch. To do that, you'll need to do `git merge origin/master` (for the "master" branch) to merge those changes into your branch - probably also called "master".`git pull` simply does a `git fetch` followed immediately by `git merge`. This is often what we desire to do, but some people prefer to use git fetch followed by git merge to make sure they understand the changes they are merging into their branch before the merge happens.
